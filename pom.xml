@@ -9,16 +9,17 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.graphql-java.example</groupId>
-	<artifactId>to-do-list-app</artifactId>
+	<artifactId>to-do-listEntity-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>to-do-list-app</name>
-	<description>Demo project for Spring Boot</description>
+	<name>to-do-listEntity-app</name>
+	<description>Demo project for GraphQL with Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
 
 	<dependencies>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -29,6 +30,45 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.6</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.graphql-java/graphql-java -->
+		<dependency>
+			<groupId>com.graphql-java</groupId>
+			<artifactId>graphql-java</artifactId>
+			<version>12.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.graphql-java</groupId>
+			<artifactId>graphql-java</artifactId>
+			<version>12.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.graphql-java</groupId>
+			<artifactId>graphql-java-spring-boot-starter-webmvc</artifactId>
+			<version>1.0</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
