@@ -69,7 +69,6 @@ public class GraphQLDataFetcher {
         return dataFetchingEnvironment -> {
             CreateItemRequest createItemRequest = CreateItemRequest.getCreateItemRequest(dataFetchingEnvironment.getArgument("input"));
             ListEntity listEntity = listEntityService.getListEntityById(createItemRequest.getListId());
-            System.out.println(listEntity);
             return this.itemService.createItem(createItemRequest,listEntity);
         };
     }
